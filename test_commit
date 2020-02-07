@@ -9,3 +9,5 @@ add ,commit,  then reset head with mixed
 test reset file
 
 test branch function
+
+test branch function2
