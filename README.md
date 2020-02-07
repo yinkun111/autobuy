@@ -1,2 +1,2 @@
 # autobuy
-damai autobus
+damai autobuy
