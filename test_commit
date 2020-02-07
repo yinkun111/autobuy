@@ -1,3 +1,8 @@
 hello
 only add ,ont commit. first
 commit already. diff workspace and head
+vi workspace,no add, no commit. diff workspace cached head
+
+add 1,2 ,to test reset head to cancle
+
+add ,commit,  then reset head with mixed
