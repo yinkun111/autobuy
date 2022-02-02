@@ -1,1 +1,2 @@
-在github上创建了这个文件。看看用 git pull origin master能不能合并到mackbook
+1.在github上创建了这个文件。看看用 git pull origin master能不能合并到mackbook
+2。在MacBook上能看到，修改之后，git add , git commit, git push origin看看能不能上传
