@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  ykapp:
+     build:
+        context: ./
+        dockerfile: Dockerfile
+     image: ykapp:v1.0.0
+     container_name: ykapp 
