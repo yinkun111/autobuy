@@ -4,5 +4,5 @@ services:
      build:
         context: ./
         dockerfile: Dockerfile
-     image: ykapp:v1.0.0
+     image: ykapp:v2.0.0
      container_name: ykapp 
