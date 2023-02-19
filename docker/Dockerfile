@@ -1,4 +1,5 @@
-FROM daocloud.io/library/python:2.7.9-slim
-COPY jenkins.py /usr/local/
+FROM daocloud.io/library/nginx:1.9.1
+COPY loopsh jenkins.py /usr/local/
 WORKDIR /usr/local
-CMD python jenkins.py
+ENTRYPOINT ["sh","loopsh"]
+CMD /bin/bash loopsh
