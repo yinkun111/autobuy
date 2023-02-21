@@ -18,12 +18,15 @@ pipeline {
         }
         stage('docker制作镜像') {
             steps {
-                echo '制作镜像成功'
+                sh '''mv jenkins.py loopsh docker/
+                docker build -t ${JOB_NAME}:$tag docker/'''
             }
         }
-        stage('镜像推送到harbor') {
+        stage('镜像推送到harbor') { 
             steps {
-                echo '推送镜像成功'
+               sh '''docker login -u admin -p Harbor12345 192.168.75.128:80
+                docker tag ${JOB_NAME}:$tag 192.168.75.128:80/harbor/${JOB_NAME}:$tag
+                cker push 192.168.75.128:80/harbor/${JOB_NAME}:$tag'''
             }
         }    
         stage('通过publish over ssh通知服务器') {
