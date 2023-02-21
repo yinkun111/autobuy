@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('拉取git代码') {
             steps {
-                echo 'Hello World'
+                checkout scmGit(branches: [[name: '${tag}']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/yinkun111/autobuy.git']])
             }
         }
         stage('构建build') {
